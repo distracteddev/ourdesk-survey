@@ -10,7 +10,7 @@ var queryOpts = {
 	queries: [
 		{
 			type: 'tag',
-			value: 'WhatIMissAboutSchool'
+			value: 'gameinsight'
 
 		}
 	]

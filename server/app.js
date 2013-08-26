@@ -85,8 +85,8 @@ sub.subscribe('ourdesk', function(data) {
 console.log('Ourdesk Survey Server Started');
 
 
-console.log('Starting Twitter Agent')
-require('./twitterAgent');
+// console.log('Starting Twitter Agent')
+// require('./twitterAgent');
 
 
 
