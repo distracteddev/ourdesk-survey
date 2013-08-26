@@ -86,7 +86,7 @@ console.log('Ourdesk Survey Server Started');
 
 
 console.log('Starting Twitter Agent')
-require('../twitterAgent');
+require('./twitterAgent');
 
 
 

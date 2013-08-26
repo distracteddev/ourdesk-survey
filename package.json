@@ -1,5 +1,6 @@
 {
-  "name": "aura-boilerplate",
+  "name": "survey",
+  "doman": "socialmosa.com",
   "description": "A boilerplate for Aura widgets",
   "version": "0.2.0",
   "start": "node server/app.js",
