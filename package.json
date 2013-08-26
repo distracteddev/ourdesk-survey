@@ -3,7 +3,9 @@
   "doman": "socialmosa.com",
   "description": "A boilerplate for Aura widgets",
   "version": "0.2.0",
-  "start": "node server/app.js",
+  "scripts" {
+    "start": "node server/app.js"
+  },
   "author": {
     "name": "Stephane Bellity & Addy Osmani"
   },
