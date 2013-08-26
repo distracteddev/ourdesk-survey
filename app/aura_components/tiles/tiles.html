@@ -1,0 +1,35 @@
+<div id="boxCtn">
+	<% _.each(boxes, function(box,i) {
+			var hasImage = (box.entities.media && box.entities.media.length);
+			if (!box.size) {
+				if (hasImage) {
+					box.size = '66'
+					box.color = 'light';
+				} else if (i % 2 === 0) {
+					box.size  = '44';
+					box.color = 'light';
+				} else {
+					box.size = '53';
+					box.color = 'dark';
+				}
+			}
+		%>
+		<div class="box size<%= box.size + ' ' + box.color %>">
+			<div class="boxContent">
+				<h4><%= box.heading %></h4>
+				<blockquote class="boxText">
+					<%=
+						box.text.replace('#WhatIMissAboutSchool', '')
+										.replace(/&amp;/g, '&')
+					%>
+				</blockquote>
+				<small class="pull-right username">- <%= box.user.screen_name %></small>
+				<!-- <img class="pull-left" src="<%= box.user.profile_image_url_https %>"> -->
+				<% if (box.entities.media && box.entities.media.length) {
+				%>
+				  <img class="boximg img-thumbnail" width="320" src="<%= box.entities.media[0].media_url %>">
+				<% } %>
+			</div>
+		</div>
+	<% }); %>
+</div>
