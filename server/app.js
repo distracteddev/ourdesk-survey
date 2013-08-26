@@ -39,7 +39,7 @@ var conn = mongoose.createConnection(format('mongodb://%s:%s/%s', host, port, db
 var Message = conn.model('Incoming', new Schema({
 	agentId: {type: String, required: true},
 	payload: {type: Schema.Types.Mixed}
-}));
+}, 'ourdesk'));
 
 /*
  * Setup bone.io
