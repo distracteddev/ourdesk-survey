@@ -18,7 +18,7 @@ app.use(express.static('app'));
 app.use(bone.static());
 
 // Listen up
-server.listen(7076);
+server.listen(process.env.PORT || 7076);
 
 /*
  * Build Mongoose Model
