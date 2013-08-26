@@ -53,6 +53,7 @@
     "mongoose": "~3.6.18",
     "switchboard-core": "git+ssh://git@github.com:tangible/switchboard-core",
     "api-agents": "git+ssh://git@github.com:tangible/api-agents.git",
-    "express": "~3.3.5"
+    "express": "~3.3.5",
+    "socket.io": "~0.9.16"
   }
 }
